@@ -1,0 +1,38 @@
+.nav-container{
+    position: fixed;
+    z-index: 999;
+    display: flex;
+    left: 20px;
+    top: 20px;
+    .logo{
+        h1{
+            text-transform: uppercase;
+            font-family: "helvetica";
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            cursor: pointer;
+            outline: 0;
+        }
+    }
+    .nav-elements{
+        line-height: 30px;
+        position: relative;
+        left: 20px;
+        ul{
+            display: flex;
+            list-style: none;
+            align-items: center;
+            flex-wrap:wrap;
+            padding-left: 0;
+            margin-bottom: 0;
+            li{
+                margin-right: 10px;
+                a{
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

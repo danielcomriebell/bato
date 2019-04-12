@@ -1,0 +1,13 @@
+<div class="container">
+  <div *ngFor="let project of projects">
+
+    <div class="cover-image">
+          <video class="home-video" src="{{project.fields.video.fields.file.url}}" autoplay loop poster="../assets/reebok.mp4" muted></video>
+          <div class="content">
+            <p><b>{{project.fields.title}}</b></p>
+            <p>Director: {{project.fields.director}}</p>
+            <p>{{project.fields.description}}</p>
+          </div>
+    </div>
+  </div>
+</div>

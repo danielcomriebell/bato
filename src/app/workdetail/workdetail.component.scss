@@ -1,0 +1,26 @@
+@import '../sass/mixins';
+@import '../sass/variables';
+
+
+.container{
+    .cover-image{
+        width: 90%;
+        position: relative;
+        left: 50%;
+        transform: translate(-50%);
+        top: 100px;
+        @include fadeInAnimation(2s);
+        video{
+            width: 100%;
+        }
+        .content{
+            margin-top: 50px;
+            margin-bottom: 50px;
+            p{
+                color: white;
+            }
+        }
+    }   
+}
+
+@include fadein();

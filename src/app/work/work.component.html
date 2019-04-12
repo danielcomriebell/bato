@@ -1,0 +1,6 @@
+<div class="work-container">
+  <div *ngFor="let project of projects" class="work">
+    <a routerLink="{{project.sys.id}}"><img src="{{project.fields.image.fields.file.url}}"
+        alt="{{project.fields.title}}">{{project.fields.title}}</a>
+  </div>
+</div>
